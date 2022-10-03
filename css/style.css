@@ -7,6 +7,15 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+body {
+    background: #000428;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #004e92, #000428);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #004e92, #000428);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
 .container-topo {
     display: flex;
     justify-content: space-between;
@@ -17,7 +26,7 @@
     font-size: 2rem;
     margin-top: 1rem;
     margin-left: 1rem;
-    color: #1a3f52;
+    color: #fff;
 }
 
 .navegaçao ul {
@@ -28,12 +37,12 @@
 }
 
 .navegaçao ul li a {
-    color: #1a3f52;
+    color: #fff;
     font-size: 1.30rem;
 }
 
 .navegaçao ul li a:hover {
-    border-bottom: 2px solid #fe515c;
+    border-bottom: 2px solid #fff;
 }
 
 .container-meio {
@@ -61,10 +70,11 @@
 .box-sobre {
     max-width: 100%;
     width: 50%;
+    margin-bottom: 10rem;
 }
 
 .box-sobre h1 {
-    color: #1a3f52;
+    color: #fff;
     font-size: 2rem;
     font-weight: 700;
     margin-bottom: 2rem;
@@ -79,18 +89,19 @@
 
 .btn {
     max-width: 100%;
-    width: 50%;
+    width: 100%;
     margin-top: 2rem;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
+    gap: 2rem;
 }
 
 .btn button {
     width: 200px;
     height: 50px;
     border-radius: 20px;
-    background-color: #fe515c;
+    background-color: #fff;
     max-width: 100%;
     border: none;
     margin-bottom: 1rem;
@@ -98,32 +109,100 @@
 }
 
 .btn button:hover {
-    background-color: #1a3f52;
+    background-color: #ccc;
 }
 
+
 .btn button a {
-    color: #fff;
+    color: #000;
     font-size: 1rem;
     text-align: center;
     display: block;
 }
 
+.container-trabalhos h2 {
+    color: #fff;
+    margin-top: 5rem;
+    padding-bottom: 1rem;
+    font-size: 1.20rem;
+}
+
+.container-imgs {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.box-trabalhos img {
+    width: 200px;
+    margin: 0 1rem;
+    border: 1px solid #000;
+}
+
+.box-trabalhos img:hover {
+    width: 220px;
+    box-shadow: 2px 2px 8px #ccc;
+    transition: 0.5s;
+}
+
+@media(max-width:1824px) {
+    .container-imgs {
+        gap: 2rem;
+    }
+}
+
+@media(max-width:1000px) {
+    .container-meio {
+        flex-direction: column;
+    }
+
+    .box-sobre {
+        width: 100%;
+        margin-top: 3rem;
+        text-align: center;
+    }
+
+    .box-sobre p {
+        padding: 1rem 3rem;
+    }
+
+    .btn {
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    .box-trabalhos {
+        gap: 1rem;
+    }
+}
+
+@media(max-width:524px) {
+    .container-imgs {
+        justify-content: center;
+    }
+}
 
 .roda-pe {
     width: 100%;
     max-width: 100%;
-    position: absolute;
+    position: relative;
     bottom: 0;
     padding: 1rem 0;
     text-align: center;
 }
 
 .contatos a {
-    color: #1a3f52;
+    color: #fff;
     display: inline-block;
     font-size: 2rem;
 }
 
 .contatos ion-icon {
     padding: 0 2rem;
+}
+
+.contatos ion-icon:hover {
+    color: #ccc;
 }
