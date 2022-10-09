@@ -10,20 +10,29 @@
     <meta name="author" content="Ricardo vieira">
     <title>Ricardo Vieira</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="/fontawesome-free-6.2.0-web/css/all.min.css">
 </head>
 
 <body>
     <header class="container-topo">
-        <H1>RICARDO</H1>
+        <H1>RICARDO.COM</H1>
+        <input type="checkbox" id="chk">
+        <label for="chk" class="show-menu-btn">
+            <i class="fa-solid fa-bars"></i>
+        </label>
         <nav class="navegaçao">
             <ul>
                 <li><a title="Portifolio" href="">Portifolio</a></li>
                 <li><a title="Sobre" href="">Sobre</a></li>
                 <li><a title="Contatos" href="">Contatos</a></li>
+                <label for="chk" class="hide-menu-btn">
+                    <i class="fas fa-times"></i>
+                </label>
             </ul>
         </nav>
         <div></div>
     </header>
+    <!--header do topo da pagina-->
     <main class="container-meio">
         <section class="box-img">
             <img src="imagens/profile-pic.png" alt="imagem de perfil de ricardo vieira">
@@ -32,25 +41,22 @@
         <section class="box-sobre">
             <div class="sobre">
                 <h1>Ricardo Vieira</h1>
-                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
-                    alteration in some form, by injected humour, or randomised words which don't look even slightly
-                    believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't
-                    anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet
-                    tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.
-                    It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures,
-                    to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free
-                    from repetition, injected humour, or non-characteristic words etc.</p>
+                <p>Olá, me chamo Ricardo e atualmente sou aluno do curso "desenvolvedor Full Stack", onde estou
+                    terminando o modulo de Front-End, e vou começar o de Back-End, e posteriormente o modulo de Web
+                    Design Express.
+
+                    Estou sempre em busca de conhecimento e novos desafios, no momento estou à procura de oportunidades
+                    e experiências no mercado de desenvolvedor Front-End.</p>
             </div>
             <!--sobre-->
             <div class="btn">
                 <button><a href="">Saiba mais </a></button>
-                <button><a href="">Baixar Curriculo <ion-icon name="download-outline"></ion-icon></a></button>
+                <button><a href="">Baixar Curriculo <i class="fa-sharp fa-solid fa-circle-down"></i></a></button>
             </div>
             <!--btn-->
             <section class="container-trabalhos">
                 <h2>Meus Trabalhos</h2>
                 <section class="container-imgs">
-
                     <div class="box-trabalhos">
                         <a target="_blank" href="https://meugit204.github.io/SITE-BEM_VINDO_AO_BRASIL.github.io/"><img
                                 src="imagens/SITE-BEM_VINDO_AO_BRASIL.png" alt="imagem do site bem vindo ao brasil"
@@ -68,32 +74,29 @@
                         <a target="_blank" href="https://meugit204.github.io/SITE-Formulario.github.io/"><img
                                 src="imagens/SITE - FORMULARIO.png" alt=""></a>
                     </div>
-
                 </section>
             </section>
         </section>
         <!--box-sobre-->
-
     </main>
+    <!--container meio-->
+
+    <div class="contatos">
+        <a target="_blank" href="https://github.com/meugit204">
+            <i class="fa-brands fa-github"></i>
+        </a>
+        <a target="_blank" href="https://www.instagram.com/kadu_vieira_rv/">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a target="_blank" href="https://www.linkedin.com/in/ricardo-vieira-penha/">
+            <i class="fa-brands fa-linkedin"></i>
+        </a>
+    </div>
+    <!--contatos-->
     <footer class="roda-pe">
-        <div class="contatos">
-            <a target="_blank" href="https://github.com/meugit204">
-                <ion-icon name="logo-github"></ion-icon>
-            </a>
-            <a target="_blank" href="https://www.instagram.com/kadu_vieira_rv/">
-                <ion-icon name="logo-instagram"></ion-icon>
-            </a>
-            <a target="_blank" href="https://www.linkedin.com/in/ricardo-vieira-penha/">
-                <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-        </div>
-        <!--contatos-->
+        <p>Ricardo · 2022 © Todos os direitos reservados.</p>
     </footer>
     <!--footer-->
-    <!--container meio-->
-    <!--header do topo da pagina-->
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>
 
 </html>

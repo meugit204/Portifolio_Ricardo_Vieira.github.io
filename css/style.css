@@ -23,7 +23,7 @@ body {
 }
 
 .container-topo h1 {
-    font-size: 2rem;
+    font-size: 1.30rem;
     margin-top: 1rem;
     margin-left: 1rem;
     color: #fff;
@@ -43,6 +43,73 @@ body {
 
 .navegaçao ul li a:hover {
     border-bottom: 2px solid #fff;
+}
+
+/*menu responsivo*/
+.show-menu-btn, .hide-menu-btn {
+    transition: 0.4s;
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.show-menu-btn {
+    width: 100%;
+}
+
+.show-menu-btn i {
+    line-height: 100px;
+    color: #fff;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+#chk {
+    position: absolute;
+    visibility: hidden;
+    z-index: -1111;
+}
+
+@media screen and (max-width:1000px) {
+    .show-menu-btn, .hide-menu-btn {
+        display: block;
+    }
+
+    .navegaçao {
+        position: fixed;
+        width: 100%;
+        height: auto;
+        background: #fff;
+        right: -100%;
+        top: 0;
+        text-align: center;
+        padding: 8rem 0;
+        line-height: normal;
+        transition: 0.7s;
+        border-bottom-left-radius: 100px;
+    }
+
+    .navegaçao ul {
+        display: flex;
+        flex-direction: column;
+        color: #000;
+    }
+
+    .navegaçao ul li a {
+        color: #000;
+    }
+
+    .hide-menu-btn {
+        position: absolute;
+        top: 40px;
+        right: 40px;
+    }
+
+    #chk:checked~.navegaçao {
+        right: 0;
+    }
 }
 
 .container-meio {
@@ -139,12 +206,12 @@ body {
     width: 200px;
     margin: 0 1rem;
     border: 1px solid #000;
+    transition: 1s;
 }
 
 .box-trabalhos img:hover {
-    width: 220px;
     box-shadow: 2px 2px 8px #ccc;
-    transition: 0.5s;
+    transform: scale(1.1, 1.1);
 }
 
 @media(max-width:1824px) {
@@ -184,12 +251,11 @@ body {
     }
 }
 
-.roda-pe {
+.contatos {
+    clear: both;
     width: 100%;
     max-width: 100%;
-    position: relative;
-    bottom: 0;
-    padding: 1rem 0;
+    padding: 2rem 0;
     text-align: center;
 }
 
@@ -199,10 +265,16 @@ body {
     font-size: 2rem;
 }
 
-.contatos ion-icon {
+.contatos i {
     padding: 0 2rem;
 }
 
-.contatos ion-icon:hover {
+.contatos i:hover {
     color: #ccc;
+}
+
+.roda-pe {
+    text-align: center;
+    color: #fff;
+    max-width: 100%;
 }
